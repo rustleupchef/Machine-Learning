@@ -19,4 +19,8 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 This code is used to send a message form the computer that has the sensor tile connected to it. 
 
-You can the port and Ip adress in the Details.txt file
+Details.txt
+
+    . me and the 
+    
+    .me and the boys
