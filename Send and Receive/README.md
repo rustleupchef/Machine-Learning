@@ -21,6 +21,5 @@ This code is used to send a message form the computer that has the sensor tile c
 
 Details.txt
 
-    . me and the 
-    
-    .me and the boys
+    . First line for is what you IP adress is 
+    . Second line is where you put a custom 4-digit code of only numbers  
