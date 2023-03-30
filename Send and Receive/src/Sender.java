@@ -8,7 +8,7 @@ public class Sender {
     public static void main(String[] args) throws Exception {
         ServerSocket server = new ServerSocket(Integer.valueOf(getVal(1)));
         Socket socket = server.accept();
-        socket.getOutputStream().write("You got a visitor".getBytes());
+        socket.getOutputStream().write(args[0].getBytes());
         socket.close();
         server.close();
     }
