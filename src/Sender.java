@@ -7,7 +7,15 @@ import javax.swing.JFrame;
 
 public class Sender {
     public static void main(String[] args) throws Exception {
-        ServerSocket server = new ServerSocket(Integer.valueOf(getVal(1)));
+        int port;
+        if(args.length == 0) {
+
+            port = Integer.valueOf(getVal(1));
+        }
+        else {
+            port = Integer.valueOf(args[0]);
+        }
+        ServerSocket server = new ServerSocket(port);
         Socket socket = server.accept();
         socket.getOutputStream().write("You got a visitor".getBytes());
         socket.close();
