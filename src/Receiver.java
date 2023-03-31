@@ -10,6 +10,7 @@ import javax.swing.JOptionPane;
 public class Receiver {
     public static void main(String[] args) throws Exception {
         JFrame frame = new JFrame();
+        frame.setAlwaysOnTop(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
         while(true) {
@@ -19,7 +20,7 @@ public class Receiver {
                 byte[] buffer = new byte[1024];
                 int bufferint = inputStream.read(buffer);
                 String write = new String(buffer, 0, bufferint);
-                JOptionPane.showMessageDialog(null, write);
+                JOptionPane.showMessageDialog(frame, write);
                 socket.close();
                 
             } catch(Exception e){}
